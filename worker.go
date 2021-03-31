@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/vgarvardt/gue/v2/adapter"
+	"github.com/kulak/gue/v2/adapter"
 )
 
 const (
