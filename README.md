@@ -17,8 +17,22 @@ The name Gue is yet another silly word transformation: Queue -> Que, Go + Que ->
 
 ## Install
 
+The following command may produce incompatibility:
+
+    go get github.com/kulak/gue/v2
+
+Output:
+
 ```
-go get -u github.com/vgarvardt/gue/v2
+go get: github.com/kulak/gue/v2@v2.0.3: parsing go.mod:
+module declares its path as: github.com/vgarvardt/gue/v2
+but was required as: github.com/kulak/gue/v2
+```
+
+Specify version explicitly:
+
+```
+go get github.com/kulak/gue/v2@v2.1.1
 ```
 
 Additionally, you need to apply [DB migration](./schema.sql).
